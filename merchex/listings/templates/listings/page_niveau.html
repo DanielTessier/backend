@@ -1,0 +1,26 @@
+{% load static %}
+    
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Intro</title>
+        <link rel="stylesheet" href="{% static 'listings/Niveau.css' %}" />
+    </head>
+    <body>
+        <div id="Partie_Jeu">
+            Partie_jeu <br />
+            <br /> 
+            {% csrf_token %}
+            {{ element }}
+        </div>
+        
+        <div id="Partie_Code">
+            <form action="" method="post" novalidate>
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit" >Lancer</button>
+            </form>
+            <a href="http://127.0.0.1:8000/page_carte_monde/">Revenir à la page Monde</a> 
+        </div>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!-- # listings/templates/listings/page_daccueil.html -->
+{% load static %}
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page de connexion </title>
+    <link rel="stylesheet" href="{% static 'listings/Accueil.css' %}" />
+</head>
+<body>
+    <h1>N'oubliez jamais d'apprendre</h1>
+    <form action="" method="post" novalidate>
+        <div class="inputs">
+            <input type="username" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+
+        <div align="center"> <button type="submit"> Jouer </button> </div>
+
+    </form>
+    
+        <div align="center"> <button type="submit"> 
+            <a href="http://127.0.0.1:8000/page_carte_monde/">Tester sans compte</a> 
+        </button> </div>
+    </div>
+</body>
+</html>
